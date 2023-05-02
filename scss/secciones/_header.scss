@@ -1,0 +1,98 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  font-family: $typo-primaria;
+  
+
+  .titulo-logo {
+    color: black;
+    align-items: center;
+    margin-left: 3px;
+  }
+
+  .cuadradito {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+
+  .imagen {
+    align-items: center;
+    max-width: 50px;
+    margin: 5px;
+  }
+
+  .informacion {
+    list-style: none;
+    font-size: 10px;
+    display: flex;
+  }
+
+  .link1 {
+    background-color: rgb(255, 255, 255);
+    padding-right: 20px;
+    margin-top: 10px;
+  }
+
+  .link2 {
+    background-color: rgb(255, 255, 255);
+    padding-right: 20px;
+    margin-top: 10px;
+  }
+
+  .link4 {
+    background-color: rgb(255, 255, 255);
+    padding-right: 20px;
+    margin-top: 10px;
+  }
+
+  .link5 {
+    background-color: rgb(255, 255, 255);
+    padding-right: 20px;
+    margin-top: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    background-color: $color-terciario;
+    color: $color-cuaternario;
+    border-radius: 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    background-color: rgba(83, 172, 255, 0.155);
+    align-items: center;
+  }
+
+
+
+  nav {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    flex-direction: column;
+    background-color: rgb(210, 229, 255);
+    align-items: center;
+  }
+
+
+  .informacion {
+    flex-direction: column;
+  justify-content: center;
+  }
+
+  .imagen {
+    margin: 0px;
+  }
+}

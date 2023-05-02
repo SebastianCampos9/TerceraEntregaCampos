@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,200&display=swap");
+@import url(animate.css);
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Serif Khojki", serif; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  font-size: "Noto Serif Khojki", serif; }
+  .header .titulo-logo {
+    font-size: 25px;
+    color: black;
+    align-items: center;
+    margin-left: 3px; }
+  .header .cuadradito {
+    display: flex;
+    align-items: center;
+    height: 50px; }
+  .header .imagen {
+    align-items: center;
+    max-width: 60px;
+    margin: 5px; }
+  .header .informacion {
+    list-style: none;
+    font-size: 15px;
+    display: flex; }
+  .header .link1 {
+    background-color: white;
+    padding-right: 20px;
+    margin-top: 10px; }
+  .header .link2 {
+    background-color: white;
+    padding-right: 20px;
+    margin-top: 10px; }
+  .header .link4 {
+    background-color: white;
+    padding-right: 20px;
+    margin-top: 10px; }
+  .header .link5 {
+    background-color: white;
+    padding-right: 20px;
+    margin-top: 10px; }
+  .header a {
+    text-decoration: none;
+    color: black; }
+  .header a:hover {
+    background-color: #7998b7;
+    color: white;
+    border-radius: 8%; }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    background-color: rgba(83, 172, 255, 0.155);
+    align-items: center; }
+  nav {
+    margin: 10px; } }
+
+@media (max-width: 425px) {
+  .header {
+    flex-direction: column;
+    background-color: #d2e5ff;
+    align-items: center; }
+  .informacion {
+    flex-direction: column;
+    justify-content: center; }
+  .imagen {
+    margin: 0px; } }
+
+.main-index .contenedor {
+  width: 100%;
+  height: 550px; }
+  .main-index .contenedor .imagen1 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
+
+.main-index .titulo-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.main-index p {
+  font-family: "Crimson Pro", serif;
+  font-size: 20px; }
+
+.main-index .cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 40px; }
+
+.main-index .card-body {
+  background-color: rgba(218, 247, 255, 0.452); }
+
+.main-index .titulo-produ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #51a2ff; }
+
+@media (max-width: 768px) {
+  .main-index .cards {
+    flex-direction: row;
+    margin: 25px; }
+  .main-index .card {
+    margin: 10px; } }
+
+@media (max-width: 425px) {
+  .main-index .cards {
+    flex-direction: column;
+    margin: 25px; }
+  .main-index .fila {
+    flex-direction: column;
+    align-items: center; }
+  .main-index .informacion-pro {
+    flex-direction: row; } }
+
+.contenido {
+  max-width: 1100px;
+  width: 100%;
+  margin: 40px auto;
+  display: flex; }
+
+.mostrador {
+  width: 100%;
+  transition: 0.5s ease; }
+  .mostrador .fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px; }
+    .mostrador .fila .item {
+      max-width: 210px;
+      padding: 30px;
+      height: 250px;
+      text-align: center;
+      margin: 0 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s; }
+      .mostrador .fila .item .descripcion {
+        font-family: "Crimson Pro", serif;
+        font-size: 14px; }
+      .mostrador .fila .item img {
+        width: 100%; }
+    .mostrador .fila .item:hover {
+      background-color: #e6e6e6; }
+
+.informacion-pro {
+  font-size: 15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  list-style: none; }
+
+.link1-pro {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  margin-top: 10px;
+  text-decoration: none; }
+
+.link2-pro {
+  background-color: #51a2ff;
+  color: white;
+  padding: 5px;
+  margin-top: 10px;
+  text-decoration: none; }
+
+.link4-pro {
+  background-color: #51a2ff;
+  color: white;
+  padding: 5px;
+  margin-top: 10px;
+  text-decoration: none; }
+
+.contenedor-sn {
+  background-image: url(https://res.cloudinary.com/dzxzrg8gq/image/upload/v1676592838/keagan-henman-Won79_9oUEk-unsplash_jxwzvg.jpg);
+  text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  color: white; }
+
+.main-index-form {
+  margin: 35px;
+  padding: 20px;
+  background-color: rgba(88, 93, 94, 0.104); }
+
+button {
+  background-color: #7998b7; }
+
+.pie-pagina {
+  width: 100%;
+  background-color: #0a141d; }
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px; }
+    .pie-pagina .grupo-1 .box figure {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .pie-pagina .grupo-1 .box figure img {
+        width: 225px; }
+    .pie-pagina .grupo-1 .box h2 {
+      color: white;
+      margin-bottom: 25px;
+      font-size: 20px; }
+    .pie-pagina .grupo-1 .box p {
+      color: #efefef;
+      margin-bottom: 10px; }
+    .pie-pagina .grupo-1 .red-social a {
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      color: white;
+      margin-right: 10px;
+      background-color: #0d2033;
+      text-align: center;
+      transition: all 300ms ease; }
+    .pie-pagina .grupo-1 .red-social a:hover {
+      color: aqua; }
+  .pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: white; }
+    .pie-pagina .grupo-2 small {
+      font-size: 15px; }
+  @media screen and (max-width: 768px) {
+    .pie-pagina .grupo-1 {
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+      padding: 35px 0px; } }
